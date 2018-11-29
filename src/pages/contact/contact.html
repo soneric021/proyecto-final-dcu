@@ -1,17 +1,15 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
+<ion-header color="primary">
+  <ion-navbar color="light">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img class="logo" src="../../assets/imagenes/LOGO_MINERD.png" width="200px" height="50px" alt=""></ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content >
+    <ion-card >
+      <ion-item color="primary"><h1 color="light" ion-text text-center>Sitios para aprender a leer</h1></ion-item>
+    </ion-card>
+    <div #map id="map"></div>
 </ion-content>

@@ -1,17 +1,113 @@
-<ion-header>
+<ion-header >
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img class="logo" src="../../assets/imagenes/LOGO_MINERD.png" width="200px" height="50px" alt=""></ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+ <div class="card-background-page">
+  <ion-card>
+    <img src="../../assets/imagenes/img1.jpg"/>
+    <div class="card-title">Bienvenidos a Minerd</div>
+    <div class="card-subtitle"></div>
+  </ion-card>
+ </div>
+
+ <ion-card color="light">
+  <ion-card-header primary text-center >
+   <h2> Actividades Disponibles</h2>
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item  color="primary">
+      <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <img src="../../assets/imagenes/imag4.jpg" alt="">
+              </ion-col>
+          <ion-col col-6>
+            <p ion-text text-center>Aprende a Leer</p>
+            <p ion-text text-center>con el monosilabo</p>
+            <p ion-text text-center>  
+                <ion-icon name="md-arrow-dropright-circle" color="dark"></ion-icon>
+              </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </button>
+
+    <button ion-item color="danger">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-6>
+                    <img src="../../assets/imagenes/img8.jpeg" alt="">
+                  </ion-col>
+              <ion-col col-6>
+                <p ion-text text-center>Aprende a Leer</p>
+                <p ion-text text-center>Reconociendo letras</p>
+                <p ion-text text-center>  
+                    <ion-icon name="md-arrow-dropright-circle" color="dark"></ion-icon>
+                  </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+    </button>
+
+    <button ion-item [navPush]="pushPage">
+        <ion-grid >
+            <ion-row>
+                <ion-col col-6>
+                    <img src="../../assets/imagenes/img.png"  height="100px" alt="">
+                  </ion-col>
+              <ion-col col-6>
+                <p ion-text text-center>Aprende a Leer</p>
+                <p ion-text text-center>con Bingo de letras</p>
+                <p ion-text text-center>  
+                    <ion-icon name="md-arrow-dropright-circle"  color="dark"></ion-icon>
+                  </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+    </button>
+
+    <button ion-item color="danger">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-6>
+                    <img src="../../assets/imagenes/img5.jpg"  height="100px" alt="">
+                  </ion-col>
+              <ion-col col-6>
+                <p ion-text text-center>Aprende a Leer</p>
+                <p ion-text text-center>Trabajando con silabas</p>
+                <p ion-text text-center>  
+                    <ion-icon name="md-arrow-dropright-circle" color="dark"></ion-icon>
+                  </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+    </button>
+
+    <button ion-item color="primary">
+        <ion-grid>
+            <ion-row>
+                <ion-col col-6>
+                    <img src="../../assets/imagenes/img6.jpg"  height="100px" alt="">
+                  </ion-col>
+              <ion-col col-6>
+                <p ion-text text-center>Aprende a Leer</p>
+                <p ion-text text-center>uniendo silabas</p>
+                <p ion-text text-center>  
+                    <ion-icon name="md-arrow-dropright-circle" color="dark"></ion-icon>
+                  </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+    </button>
+
+
+  </ion-list>
+</ion-card>
 </ion-content>

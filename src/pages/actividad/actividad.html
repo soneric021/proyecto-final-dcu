@@ -1,0 +1,19 @@
+<ion-header >
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img class="logo" src="../../assets/imagenes/LOGO_MINERD.png" width="200px" height="50px" alt=""></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+<h1 ion-text text-center>Elige la palabra correcta</h1>
+<ion-list *ngFor="let l of letras">
+  <ion-item><img src="{{l.img}}" alt="" srcset=""></ion-item>
+  <ion-item><button ion-button (click)="respuesta(l.quiz.opt1,l.id)">{{l.quiz.opt1}}</button>
+    <button ion-button  (click)="respuesta(l.quiz.opt2,l.id)">{{l.quiz.opt2}}</button> 
+    <button ion-button  (click)="respuesta(l.quiz.opt3,l.id)">{{l.quiz.opt3}}</button>  </ion-item>
+</ion-list>
+</ion-content>
