@@ -1,0 +1,7 @@
+{
+  "name": "pdcu",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
